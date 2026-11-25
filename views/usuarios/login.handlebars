@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"><title>Login - Atividade React</title></head>
+<body>
+  <h1>Entrar</h1>
+  <p>Faça login para acessar o painel de vídeos.</p>
+  {{#if erro}}<p>{{erro}}</p>{{/if}}
+  <form action="/login" method="POST">
+    <p><label for="email">Email:</label><br><input id="email" name="email" type="email" required></p>
+    <p><label for="senha">Senha:</label><br><input id="senha" name="senha" type="password" required></p>
+    <button type="submit">Entrar</button>
+  </form>
+</body>
+</html>
