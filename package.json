@@ -1,0 +1,26 @@
+{
+  "name": "atividade-react",
+  "version": "1.0.0",
+  "description": "Aplicação de estudos com React, Express, Handlebars, Sequelize, SQLite e Passport",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "server": "node app.js",
+    "build": "npm --prefix client install && npm --prefix client run build",
+    "start": "node app.js",
+    "criar-usuario": "node criarUsuario.js"
+  },
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "connect-sqlite3": "^0.9.15",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-handlebars": "^8.0.1",
+    "express-session": "^1.18.1",
+    "method-override": "^3.0.0",
+    "passport": "^0.7.0",
+    "passport-local": "^1.0.0",
+    "sequelize": "^6.37.5",
+    "sqlite3": "^5.1.7"
+  }
+}
